@@ -48,15 +48,12 @@
                                         <p class="mb-3 font-weight-normal">Lorem ipsum dolor sit.</p>
 
                                         <div class="form-group">
-                                            <label for="email">Email</label>
-                                            <input type="email" name="email" class="form-control" id="email" placeholder="Email" required autofocus>
+                                            <input type="email" autocomplete="off" name="email" class="form-control" id="email" placeholder="Email" required autofocus onfocus="makefocus(this)" onfocusout="losefocus(this);">
                                         </div>
 
                                         <div class="form-group">
-                                            <label for="password">Password</label>
-
                                             <div class="input-group mb-2">
-                                                <input type="password" class="form-control" id="password-input" placeholder="Password">
+                                                <input type="password" autocomplete="off" class="form-control" id="password-input" placeholder="Password" onfocus="makefocus(this)" onfocusout="losefocus(this);">
                                                 <div class="input-group-append">
                                                     <button class="btn btn-pass" type="button" id="toggle-password" style="color: #fff; background-color: transparent; width: 100%;">
                                                         <i class="far fa-eye" id="togglePassword"></i>
@@ -87,8 +84,6 @@
                                                 <i class="fab fa-facebook-square mx-4"></i>
                                                 <i class="fa fa-google-plus" aria-hidden="true"></i>
                                             </div>
-                                            
-                                            <!-- <a class="btn btn-link text-primary" href="#">Forgot Your Password?</a> -->
                                         </div>
                                     </form>
                                 </div>
@@ -130,6 +125,19 @@
                 </div>
             </div>  
         </div>
+
+        <script>
+            function makefocus(obj) {
+                var parent = $(obj).closest('.form-group');
+                $(parent).css("border-left", "10px solid #F9B17A");
+                $(parent).css("transition", "0.5s");
+            }
+            function losefocus(obj) {
+                var parent = $(obj).closest('.form-group');
+                $(parent).css("border-left", "2px solid #F9B17A");
+                $(parent).css("transition", "0.5s");
+            }
+        </script>
 
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>

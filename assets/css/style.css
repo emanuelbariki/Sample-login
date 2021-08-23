@@ -148,6 +148,14 @@ input[type='text']::placeholder,
 input[type='password']::placeholder {
   color: #FFFFFF;
 }
+input[type='email'], input[type='text'], input[type='password']{
+  border-radius: 0px;
+}
+
+
+input::before{
+  background-color: none;
+}
 
 label {
   color: #424769;
