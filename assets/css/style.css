@@ -1,0 +1,178 @@
+/* === colors === */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-size: 1rem;
+  background-color: #2D3250;
+  color: #FFFFFF;
+  font-family: 'Raleway', sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.btn {
+  width: 200px;
+}
+
+.btn-pass {
+  color: #FFFFFF;
+  background-color: transparent;
+  width: 100%;
+}
+
+.btn-cream {
+  background-color: #F9B17A;
+  color: #101010;
+}
+
+.form-bg {
+  background-color: #424769;
+}
+
+.left-image {
+  height: 100%;
+  width: 100%;
+  background-image: url("../img/mountains.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 0;
+  margin: 0;
+}
+
+.form-wrapper {
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.container-form {
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.404) 0px 54px 55px;
+          box-shadow: rgba(0, 0, 0, 0.404) 0px 54px 55px;
+}
+
+@media screen and (max-width: 768px) {
+  .container-form {
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+  }
+}
+
+.card {
+  background: transparent;
+  border: none;
+}
+
+.nav-tabs {
+  border: none;
+  background-color: transparent;
+}
+
+.nav-tabs .nav-item {
+  margin: 0;
+  background-color: transparent;
+}
+
+.nav-tabs .nav-item .nav-link {
+  color: #676F9D;
+  background-color: transparent;
+  border: none;
+}
+
+.nav-tabs .nav-item .nav-link.active {
+  color: #FFFFFF;
+  border-bottom: 2px solid #F9B17A;
+}
+
+input[type='email'],
+input[type='text'],
+input[type='password'] {
+  outline: none;
+  padding-left: 5px;
+  padding-right: 0;
+  background-color: transparent;
+  color: #FFFFFF;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+input[type='email']:focus,
+input[type='text']:focus,
+input[type='password']:focus {
+  background-color: transparent;
+  border: none;
+  color: #FFFFFF;
+  letter-spacing: 1px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+input[type='email']::-webkit-input-placeholder,
+input[type='text']::-webkit-input-placeholder,
+input[type='password']::-webkit-input-placeholder {
+  color: #FFFFFF;
+}
+
+input[type='email']:-ms-input-placeholder,
+input[type='text']:-ms-input-placeholder,
+input[type='password']:-ms-input-placeholder {
+  color: #FFFFFF;
+}
+
+input[type='email']::-ms-input-placeholder,
+input[type='text']::-ms-input-placeholder,
+input[type='password']::-ms-input-placeholder {
+  color: #FFFFFF;
+}
+
+input[type='email']::placeholder,
+input[type='text']::placeholder,
+input[type='password']::placeholder {
+  color: #FFFFFF;
+}
+
+label {
+  color: #424769;
+}
+
+.form-group {
+  background-color: #676F9D;
+  border-left: 2px solid #F9B17A;
+  padding: 10px;
+}
+
+.form-control {
+  background-color: transparent;
+  border: none;
+}
+
+.form-control:focus {
+  border: none;
+}
+
+.custom-control-label {
+  color: #FFFFFF;
+}
+
+.pass-forget a {
+  color: #676F9D;
+}
+/*# sourceMappingURL=style.css.map */
